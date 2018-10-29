@@ -1,0 +1,24 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <h1 id="demo"></h1>
+    <button onclick="dateTime()">Date</button>
+    <script>
+    /* var dateTime = */
+    function dateTime() {
+      var date = new Date();
+      var y = date.getFullYear();
+      var m = date.getMonth();
+        var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      var d = date.getDate();
+      var hour = date.getHours();
+      var min = date.getMinutes();
+
+      var fDate = month[m] + " " + d + ", " + y + " " + hour + ":" + min;
+      document.getElementById("demo").innerHTML = fDate;
+    }
+    </script>
+  </body>
+</html>
