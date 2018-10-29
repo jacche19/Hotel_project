@@ -14,6 +14,13 @@ body {
   font-size: 20px;
 }
 
+#rooms {
+  margin: 0 auto;
+  height: auto;
+  width: auto;
+}
+/* can't center ^ */
+
 #rooms > div {
   margin: 20px;
   width: 300px;
@@ -21,8 +28,9 @@ body {
   background-color: rgb(50,50,50);
   background-color: rgba(0,0,0,0.5);
   display: inline-block;
-  height: 400px;
+  /*height: 450px;*/
   border-radius: 25px;
+  padding-bottom: 25px;
 }
 
 #textBox {
@@ -31,4 +39,11 @@ body {
 }
 #buttons {
   float: right;
+}
+ 
+#cleaning1 {
+  visibility: hidden;
+}
+#full1 {
+  visibility: hidden;
 }
