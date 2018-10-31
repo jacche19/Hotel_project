@@ -7,6 +7,7 @@ var clean1 = false;
 document.getElementById('full1').style.visibility = 'hidden';
 document.getElementById('cleaning1').style.visibility = 'hidden';
 */
+var fullDate;
 
 console.log(count1);
 
@@ -40,7 +41,18 @@ function add1() {
       var newTd = document.createElement('td');
       var newText = document.createTextNode(text);
       newTd.appendChild(newText);
-      
+      //Time for each guest
+
+
+      var d = new Date();   //Invoke the JS Date function
+      var n = d.toDateString();  //Passing date as a string and save as "n"
+      console.log(n);  //This is to test to see if the date is passing.
+
+
+
+      var dateText = document.createTextNode(n);
+      var newDate = document.createElement('td');
+      newDate.appendChild(dateText);
       /*
       //Create new removeGuest button and place in new table cell (newButton)
       var newButton = document.createElement('TD');
@@ -60,6 +72,8 @@ function add1() {
       newTr.appendChild(newTd);
       //newTr.appendChild(newButton);
       table1.appendChild(newTr);
+      //Add date cell to table row
+      newTr.appendChild(newDate);
       }
     
     
@@ -119,6 +133,6 @@ function clear1(){
   tableGone.parentNode.removeChild(tableGone);
   count1 = 0;
   var table = document.createElement('table');
-  var tableCont = document.getElementById('tableCont')[0];
+  var tableCont = document.getElementById('tableCont1');
   tableCont.appendChild(table);
 }

@@ -47,3 +47,17 @@ body {
 #full1 {
   visibility: hidden;
 }
+
+#list{
+  margin: 20px;
+  width: 300px;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(50,50,50);
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  right: 0;
+  top: 0;
+  border-radius: 25px;
+  padding-bottom: 25px;
+}
